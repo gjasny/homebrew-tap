@@ -17,6 +17,7 @@ before_install:
   - export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/gjasny/homebrew-tap"
 
 script:
+  - brew install gjasny/homebrew-tap/bullshtml
   - brew test-bot --no-bottle
 
 notifications:
