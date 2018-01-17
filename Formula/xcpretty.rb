@@ -12,7 +12,8 @@ class Xcpretty < Formula
     ENV["GEM_HOME"] = libexec
     system "gem", "build", "xcpretty.gemspec"
     system "gem", "install", "xcpretty-#{version}.gem"
-    bin.install "libexec/bin/xcpretty"
+    system "find", "."
+    #bin.install "libexec/bin/xcpretty"
     #bin.env_script_all_files("libexec/bin", :GEM_HOME => ENV["GEM_HOME"])
   end
 
