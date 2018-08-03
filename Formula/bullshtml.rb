@@ -2,7 +2,7 @@ class Bullshtml < Formula
   desc "Html Reporter for BullseyeCoverage tool."
   homepage "https://github.com/RafalSkorka/bullshtml"
   url "https://github.com/RafalSkorka/bullshtml.git",
-      :tag => "1.0.6",
+      :tag => "1.2.0",
       :revision => "43efec2ff5ea7db9622c679616908aeacf46e7b8"
 
   depends_on "ant" => :build
