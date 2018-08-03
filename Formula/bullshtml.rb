@@ -12,7 +12,7 @@ class Bullshtml < Formula
     system "ant", "make_onejar", "-Ddebuglevel=none"
 
     libexec.install "target/bullshtml.jar"
-    (bin/"bullshtml").write <<-EOS.undent
+    (bin/"bullshtml").write <<~EOS
       #!/bin/bash
       exec java -jar #{libexec}/bullshtml.jar "$@"
     EOS
