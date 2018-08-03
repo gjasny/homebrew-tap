@@ -9,7 +9,6 @@ class Bullshtml < Formula
   depends_on :java => "1.6+"
 
   def install
-    ENV.java_cache
     system "ant", "make_onejar", "-Ddebuglevel=none"
 
     libexec.install "target/bullshtml.jar"
